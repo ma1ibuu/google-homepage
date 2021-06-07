@@ -1,0 +1,1 @@
+The purpose of this project is to re-create the google homepage, hoping to be able to navigate/remember html/css with not too much looking things up.
