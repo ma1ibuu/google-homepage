@@ -1,14 +1,24 @@
+/* text format*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
 
+/* head content */
+
+.main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
 
 nav .header{
   display: inline-block;
+  position: sticky;
   width: 100%;
   text-align: middle;
   margin-top: 1%;
+  white-space: nowrap;
 
 }
 
@@ -31,7 +41,7 @@ a:hover {
 }
 
 #gmail {
-    margin-left: 75%;
+    margin-left: 70%;
     margin-right: 4px;
 }
 
@@ -42,6 +52,8 @@ a:hover {
 #apps {
     margin: 0px 8px 0px 4px;
 }
+
+/* body content (search bar and buttons */
 
 .button-apps {
     background-image: url(https://i.imgur.com/9JAcYhG.png);
@@ -76,8 +88,12 @@ li {
     display: inline;
 }
 
+/* flex content for center search bar and icons, kinda incongruent 
+in a land of block but nice and functional */
+
 .searchbar {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     width: 525px;
@@ -92,21 +108,22 @@ li {
 .searchwrap {
     position: relative;
     display: flex;
-    min-width: 100px;
+    justify-content: center;
+    width: 100%;
 }
 
 
 #searchbar_img {
-    position: absolute;
-    top: 380px;
-    left: 360px;
+    position: relative;
+    top: -30px;
+    left: 10px;
     width: 20px;
 }
 
 #micbar_img {
-    position: absolute;
-    top: 380px;
-    left: 870px;
+    position: relative;
+    top: -30px;
+    left: 500px;
     width: 16px;
 }
 
@@ -147,16 +164,22 @@ li {
     margin: 0px 4px;
                                                         
 }
+
+/* footer content */
+
 .footer {
     display: inline-block;
     width: 100%;
     text-align: start;
-    margin-top: 13%;
+    margin-top: 12%;
     margin-right: 0px;
+    margin-bottom: auto;
     background-color: rgb(235, 235, 235);
     padding: 30px;
-    position: static;
+    position: -webkit-sticky;
+    position: sticky;
     bottom: 0px;
+    left: 0;
 }
 
 #advertising {
@@ -186,6 +209,6 @@ li {
 }
 
 #settings {
-    margin: 0px 8px 0px 0px;
+    margin: 0px  0px 0px;
     padding: 0px 2px 0px 6px;
 }
